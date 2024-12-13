@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistem Informasi Manajemen Karyawan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/random/1920x1080?office,workplace');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            margin-bottom: 20px; /* Menambahkan margin bawah untuk jarak antar card */
+            height: 200px; /* Mengatur tinggi card */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        .card i {
+            font-size: 3rem;
+            opacity: 0.9;
+        }
+        .card-body {
+            position: relative;
+            padding: 20px; /* Menambahkan padding untuk kenyamanan tampilan */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Memastikan konten berada di tengah secara vertikal */
+            align-items: center; /* Memastikan konten berada di tengah secara horizontal */
+        }
+        .card-body h2 {
+            font-weight: bold;
+            font-size: 2.5rem; /* Meningkatkan ukuran teks untuk lebih jelas */
+            text-align: center; /* Mengatur agar teks berada di tengah */
+        }
+        .card-title {
+            text-align: center; /* Mengatur agar judul card berada di tengah */
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            margin-top: auto;
+            padding: 20px 0; /* Memberikan padding pada footer */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">SISTEM INFORMASI MANAJEMEN KARYAWAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="karyawan.html">Karyawan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jabatan.html">Jabatan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="divisi.html">Divisi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="mb-4 text-center">Dashboard - Sistem Informasi Manajemen Karyawan</h2>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Karyawan</h5>
+                        <h2>5</h2>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Jabatan</h5>
+                        <h2>2</h2>
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-warning text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Divisi</h5>
+                        <h2>2</h2>
+                        <i class="fas fa-building"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-info text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Lembur</h5>
+                        <h2>3</h2>
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        <p>&copy; Krisna Nur Aedi Aripin. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
